@@ -3,8 +3,10 @@
 
 /* Set up some CSS variables to theme the application. */
 :root {
-  --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 236, 236, 236;
+  --matr-navbar-bg: #a254d0;
+  --matr-navbar-bg-rgb: blue;
+  --matr-navbar-text-color: white;
+  --matr-navbar-highlight-text: #000080;
 }
 
 /* Change bootstrap variable values.
@@ -12,6 +14,13 @@
  */
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20211115/pngtree-plain-abstract-blue-background-hd-with-wave-image_916069.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  --bs-dark: var(--matr-navbar-bg);
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+  background-size: cover;
 }
 
 /* Set the alert background on the signin and signup pages. */
@@ -25,4 +34,20 @@ body {
   color: var(--bs-dark);
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+footer, footer a {
+  color: var(--matr-navbar-text-color);
+}
+
+body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--matr-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-color: var(--matr-navbar-text-color);
+  --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
+}
+
+.bg-dark a.dropdown-item {
+  color: var(--matr-navbar-bg);
 }
