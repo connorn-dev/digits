@@ -7,7 +7,7 @@ const Landing = () => (
   <Container fluid={false}>
     <Row>
       <Col>
-        <Container className="d-flex align-items-center justify-content-center flex-column">
+        <Container className="d-flex align-items-center justify-content-center flex-column x">
           <PeopleFill className="mt-4" style={{ fontSize: '150px' }} />
           <h1 style={{ textAlign: 'center' }}>Multiple Users</h1>
           <p style={{ textAlign: 'center' }}>This address book enables any number of users to register and save their business contacts. You can only see the contacts you have created.</p>
