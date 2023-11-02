@@ -9,5 +9,40 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultContacts": [
+    {
+      "firstName": "John",
+      "lastName": 12345,
+      "address": "123 Main St",
+      "image": "https://i.redd.it/ygic3trelbk51.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "owner": "john@foo.com"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": 67890,
+      "address": "456 Oak Ave",
+      "image": "https://aluminium-profile.gr/wp-content/uploads/2016/02/50x50-Heavy-Aluminium-Profile.jpg",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "owner": "admin@foo.com"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": 11111,
+      "address": "789 Pine Blvd",
+      "image": "https://i.redd.it/33n389xxveb91.png",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "owner": "admin@foo.com"
+    },
+    {
+      "firstName": "Alice",
+      "lastName": 22222,
+      "address": "012 Birch Ln",
+      "image": "https://i.pinimg.com/1200x/c3/6a/5c/c36a5c4e77a823271f404a5a9310eff6.jpg",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "owner": "john@foo.com"
+    }
   ]
 }
