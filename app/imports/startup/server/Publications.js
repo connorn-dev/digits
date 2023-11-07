@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Contacts } from '../../api/contact/Contacts';
+import { Notes } from '../../api/Note/Notes';
 
 Meteor.publish(Contacts.userPublicationName, function () {
   if (this.userId) {
@@ -11,9 +12,24 @@ Meteor.publish(Contacts.userPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(Notes.userPublicationName, function () {
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Notes.collection.find({ owner: username });
+  }
+  return this.ready();
+});
+
 Meteor.publish(Contacts.adminPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return Contacts.collection.find();
+  }
+  return this.ready();
+});
+
+Meteor.publish(Notes.adminPublicationName, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Notes.collection.find();
   }
   return this.ready();
 });
