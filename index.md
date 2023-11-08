@@ -62,7 +62,7 @@ The "Admin" Page is only availible for accounts market with admin account type. 
 
 ![Admin Page](./doc/ss9.png)
 
-Thank you for considering to use Digits web application.
+Thank you for considering to use Digits web application. Have a good day!
 
 
 
